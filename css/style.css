@@ -3,15 +3,40 @@
 
    
     background: rgb(0,255,2);
-background: linear-gradient(180deg, rgba(0,255,2,0.08865544508819156) 0%, rgba(15, 15, 15, 0) 65%); 
+background: linear-gradient(180deg, rgba(0, 255, 0, 0.045) 0%, rgba(15, 15, 15, 0) 65%); 
 }
 
 .jumbotron{
+    position:relative;
     margin-top: 0px;
-    height: 400px;
+    height: 500px;
     
 }
 
+.carousel-inner>.carousel-item{
+    transition: 0.5s;
+}
+
+.carousel-inner>.carousel-item:hover{
+opacity: 0.5;}
+
+.carousel-inner>.carousel-item:hover::after{
+    
+    content:"Veja mais...";
+    position: absolute;
+    color:white;
+    z-index: 5;
+}
+
+.video-header{
+    z-index: -1;
+    position: absolute;
+    right: 40vw;
+    top: 30px;
+    width: 20vw;
+    height: 20vh;
+    object-fit: cover;
+}
 .jumbotron h2{
     padding-top: 150px;
     text-align: center;
@@ -52,7 +77,6 @@ a{
 .btn-green:hover(){
     color: rgb(0, 255, 0);
 }
-
 .navbar-nav{
     --bs-nav-link-hover-color: rgb(60, 255, 17);
 }
@@ -66,4 +90,21 @@ a{
 .icon-brand{
     width: 85px;
     height: 85px;
+}
+
+.footer-page{
+    margin-top: 250px;
+    
+}
+.discord-community-footer{
+    display:flex;
+    flex-direction: row;
+    
+}
+
+.discord-community-footer>a{
+    text-decoration-line:none ;
+}
+.discord-community-footer>a>img{
+    
 }

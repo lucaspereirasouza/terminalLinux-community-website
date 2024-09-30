@@ -96,15 +96,18 @@ a{
     margin-top: 250px;
     
 }
-.discord-community-footer{
-    display:flex;
-    flex-direction: row;
-    
+footer>h1{
+    text-align: center;
 }
 
-.discord-community-footer>a{
-    text-decoration-line:none ;
+.discord-community-footer{    
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
 }
+
+
 .discord-community-footer>a>img{
     
+    margin-left: 8px;    
 }

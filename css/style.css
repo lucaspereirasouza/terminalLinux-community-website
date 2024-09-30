@@ -87,6 +87,28 @@ a{
     margin-right: 7px;
 }
 
+/*  */
+.row-tips{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.tip-box{
+    background: red;
+    margin-left: 5px;
+    padding-left: 15px;
+    text-decoration-line: none;
+
+}
+.tip-box:hover::after{
+    content: 'clicar';
+    position:relative;
+    color:white;
+    text-decoration-line: none;
+
+}
+
+
 .icon-brand{
     width: 85px;
     height: 85px;
